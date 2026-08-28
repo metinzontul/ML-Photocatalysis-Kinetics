@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Author: Prof. Dr. Metin Zontul
+# 28.08.2026
 """Marginal versus grouped-conditional permutation importance.
 
 This script compares two permutation schemes for the Random Forest model used
