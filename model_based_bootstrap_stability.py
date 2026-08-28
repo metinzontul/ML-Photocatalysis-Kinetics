@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Model-based block-bootstrap stability analysis for the AC@NiO RF model.
+# Author: Prof. Dr. Metin Zontul
+# 28.08.2026
+""" Model-based block-bootstrap stability analysis for the AC@NiO RF model.
 
 The analysis quantifies the stability of three Random Forest importance
 measures for predicting Ct/C0 from nominal Cu-loading and reaction time:
