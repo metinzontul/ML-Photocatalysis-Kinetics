@@ -4,12 +4,6 @@ Created on Tue Aug 11 18:35:19 2026
 
 @author: Metin Zontul
 """
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 11 18:35:19 2026
-
-@author: Metin Zontul
-"""
 
 # -*- coding: utf-8 -*-
 """
