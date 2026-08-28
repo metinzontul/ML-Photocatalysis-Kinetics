@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Discrete first-order ALE analysis for the AC@NiO catalyst dataset.
+# Author: Prof. Dr. Metin Zontul
+# 28.08.2026
+""" Discrete first-order ALE analysis for the AC@NiO catalyst dataset.
 
 The Random Forest predicts Ct/C0 from nominal Cu-loading and reaction time.
 Both predictors are observed on discrete experimental grids:
