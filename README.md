@@ -1,5 +1,4 @@
-# Explainable Machine Learning for Methylene Blue Removal under Irradiation: Assessing Nominal Cu-Loading in AC@NiO
-
+# Explainable Machine Learning for Methylene Blue Removal Under Irradiation: Assessing Nominal Cu-Loading in AC@NiO
 This repository contains the dataset and Python source code for modeling the time-dependent photocatalytic degradation kinetics of AC@NiO catalysts prepared with nominal Cu precursor loadings using a tree-based machine learning framework (Random Forest)[cite: 15]. 
 
 The methodology strictly enforces physical scaling algebraically and utilizes a rigorous Out-of-Time (chronological) validation strategy to prevent temporal data leakage[cite: 15]. It also includes Explainable AI (XAI) tools to decode the macroscopic kinetic drivers of the reaction[cite: 15].
@@ -28,6 +27,9 @@ The methodology strictly enforces physical scaling algebraically and utilizes a 
 *   `rf_response_heatmap.py`: Generates a discrete, unsmoothed two-dimensional RF response heatmap for predicted $C_t/C_0$ across the complete 5 x 13 experimental grid.
 *   `updated_codes_reviewer2_comment_4.py`: Conducts an RF complexity sensitivity analysis to evaluate the impact of various tree depth and leaf size constraints on predictive performance.
 *   `xai_shap_mdi_plots.py`: Generates publication-quality (600 DPI) SHAP summary plots and stacked MDI bar charts[cite: 15].
+*   `rf_sensitivity_and_oot_evaluation.py`: The core monolithic script. It performs the rigorous 10-seed multi-metric robustness analysis (using K-Fold and LOOCV), evaluates 6 distinct tree-complexity configurations,  *  *    executes the Chronological OOT diagnostic, and automatically exports comprehensive performance metrics and tree complexities to CSV and JSON formats.
+*   `phase3_xai_analysis.py`: Generates the Explainable AI (XAI) assessments, including the publication-quality SHAP summary plots, Normalized MDI percentages, and Permutation Feature Importance metrics based on the final *    regularized model.
+*   `requirements.txt`: Contains the list of Python dependencies required to run the scripts.
 
 ## ⚙️ Requirements
 
