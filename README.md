@@ -17,9 +17,7 @@ The methodology strictly enforces physical scaling algebraically and utilizes a 
 *   `rf_multiseed_robustness.py`: Evaluates the Random Forest model across 10 random seeds using K-Fold, LOOCV, and GroupKFold, reporting physical MAE and MSE.
 *   `rf_out_of_time_validation.py`: Performs strict chronological splitting to test future boundary forecasting capabilities.
 *   `rf_loocv_predictions.py`: Runs a Leave-One-Out Cross-Validation to generate unscaled `y_true` and `y_pred` coordinates for scatter plotting.
-*   `xai_shap_mdi_plots.py`: Generates publication-quality (600 DPI) SHAP summary plots and stacked MDI bar charts.
-
-*   `ml_photocatalysis_pipeline.py`: The core ML pipeline executing Random Forest regression, target-specific robustness evaluations (5-Fold CV, LOOCV), chronological diagnostics, SHAP analysis, MDI, Permutation Feature Importance, and PDP generation.
+*   `ml_photocatalysis_pipeline.py`: The core ML pipeline executing Random Forest regression, target-specific robustness evaluations (5-Fold CV, LOOCV), chronological diagnostics, SHAP analysis, MDI, Permutation Feature        Importance, and PDP generation.
 *   `discrete_ale_analysis.py`: Computes and visualizes discrete first-order Accumulated Local Effects (ALE) curves for nominal Cu-loading and reaction time.
 *   `marginal_permutation_importance.py`: Calculates cross-validated marginal permutation feature importance using shuffled five-fold validation to evaluate the decrease in $R^2$ and increase in MAE.
 *   `marginal_vs_conditional_permutation_importance.py`: Compares marginal permutation importance with grouped-conditional permutation importance.
@@ -27,6 +25,8 @@ The methodology strictly enforces physical scaling algebraically and utilizes a 
 *   `rf_response_heatmap.py`: Generates a discrete, unsmoothed two-dimensional RF response heatmap for predicted $C_t/C_0$ across the complete 5 x 13 experimental grid.
 *   `updated_codes_reviewer2_comment_4.py`: Conducts an RF complexity sensitivity analysis to evaluate the impact of various tree depth and leaf size constraints on predictive performance.
 *   `xai_shap_mdi_plots.py`: Generates publication-quality (600 DPI) SHAP summary plots and stacked MDI bar charts[cite: 15].
+*   `xai_pfi_bootstrap_metrics.py`: Computes the advanced feature-attribution metrics presented in Section 4.6. This script executes 10-seed cross-validated marginal and grouped-conditional Permutation Feature Importance       (PFI) and performs a 1000-repetition moving-block bootstrap stability analysis.
+*   `requirements.txt`: Contains the list of Python dependencies required to run the scripts.
 *   `rf_sensitivity_and_oot_evaluation.py`: The core monolithic script. It performs the rigorous 10-seed multi-metric robustness analysis (using K-Fold and LOOCV), evaluates 6 distinct tree-complexity configurations,  *  *    executes the Chronological OOT diagnostic, and automatically exports comprehensive performance metrics and tree complexities to CSV and JSON formats.
 *   `phase3_xai_analysis.py`: Generates the Explainable AI (XAI) assessments, including the publication-quality SHAP summary plots, Normalized MDI percentages, and Permutation Feature Importance metrics based on the final *    regularized model.
 *   `requirements.txt`: Contains the list of Python dependencies required to run the scripts.
